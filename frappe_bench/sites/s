@@ -1,0 +1,23 @@
++--------------------+--------------+------+-----+-----------+-------+
+| Field              | Type         | Null | Key | Default   | Extra |
++--------------------+--------------+------+-----+-----------+-------+
+| name               | varchar(140) | NO   | PRI | NULL      |       |
+| creation           | datetime(6)  | YES  | MUL | NULL      |       |
+| modified           | datetime(6)  | YES  |     | NULL      |       |
+| modified_by        | varchar(140) | YES  |     | NULL      |       |
+| owner              | varchar(140) | YES  |     | NULL      |       |
+| docstatus          | tinyint(4)   | NO   |     | 0         |       |
+| idx                | int(11)      | NO   |     | 0         |       |
+| _user_tags         | text         | YES  |     | NULL      |       |
+| _comments          | text         | YES  |     | NULL      |       |
+| _assign            | text         | YES  |     | NULL      |       |
+| _liked_by          | text         | YES  |     | NULL      |       |
+| section_break_tj8p | varchar(140) | YES  |     | NULL      |       |
+| image              | text         | YES  |     | NULL      |       |
+| author             | varchar(140) | YES  |     | NULL      |       |
+| description        | longtext     | YES  |     | NULL      |       |
+| isbn               | varchar(140) | YES  |     | NULL      |       |
+| status             | varchar(140) | YES  |     | Available |       |
+| publisher          | varchar(140) | YES  |     | NULL      |       |
+| article_name       | varchar(140) | YES  |     | NULL      |       |
++--------------------+--------------+------+-----+-----------+-------+
