@@ -1,0 +1,22 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title |e }}</h1>
+<img src="{{ image }}" style="max-width: 30%;">
+<div>By {{ author }}</div>
+
+<span class="badge badge-success">
+{% if status == 'Available' %}
+Available
+{%- elif status == "Issued" %}
+Issued
+{% endif  %}
+</span>
+
+<p>Publisher: <strong>{{ publisher }}</strong></p>
+<p>ISBN: <strong>{{ isbn }}</strong></p>
+
+<div>{{ description }}</div>
+{% endblock %}
+
+<!-- this is a sample default web page template -->
